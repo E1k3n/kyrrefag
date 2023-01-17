@@ -2,15 +2,15 @@
 
 [Ukeoppgaver uke 3 - Arkitekturer og lastbalansering](https://ntnu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_33872_1&content_id=_1950914_1# "Alternative formater")
 
-1. **( DEL AV OBLIG )** Opprett tre virtuelle maskiner: balancer, www1 og www2. Vi begynner med gx1.1c1r instanser for nå.
+- [x] 1. **( DEL AV OBLIG )** Opprett tre virtuelle maskiner: balancer, www1 og www2. Vi begynner med gx1.1c1r instanser for nå.
 
   
 
-2. **( DEL AV OBLIG )** Gå til «Network -> Floating IPs» i OpenStack og sørg for at en ny «public» IP er allokert til prosjektet deres. Forsøk å knytte den IP adressen til balancer.
+- [x] 2. **( DEL AV OBLIG )** Gå til «Network -> Floating IPs» i OpenStack og sørg for at en ny «public» IP er allokert til prosjektet deres. Forsøk å knytte den IP adressen til balancer.
 
   
 
-3. **( DEL AV OBLIG )** Installer Apache+PHP på www1 og www2. Man man installere ting på Linux som "root" brukeren. Ubuntu-filsystemet er satt opp slik at brukeren "ubuntu" kan bli root, ved at man kjører kommandoen "sudo su". Legg merke til at promptet har endret seg når man er root.
+- [x] 3. **( DEL AV OBLIG )** Installer Apache+PHP på www1 og www2. Man man installere ting på Linux som "root" brukeren. Ubuntu-filsystemet er satt opp slik at brukeren "ubuntu" kan bli root, ved at man kjører kommandoen "sudo su". Legg merke til at promptet har endret seg når man er root.
 
   
 
@@ -23,7 +23,7 @@ apt-get install apache2 libapache2-mod-php
 
   
 
-4. **( DEL AV OBLIG )** Test Apache+PHP på www1 og www2. Man kan f.eks lage en enkel webside på hver av webserverne, ved å endre på standard-filen /var/www/html/index.html.
+- [x] 4. **( DEL AV OBLIG )** Test Apache+PHP på www1 og www2. Man kan f.eks lage en enkel webside på hver av webserverne, ved å endre på standard-filen /var/www/html/index.html.
 
   
 
@@ -37,7 +37,7 @@ Så lager dere en ny:
 
 nano /var/www/html/index.html
 
-  
+
 
 Det er ikke viktig med HTML for å se at det fungerer. Man kan f.eks bare ha en enkel tekst: "Hei fra www1" og "Hei fra www2".
 
@@ -45,23 +45,21 @@ Det er ikke viktig med HTML for å se at det fungerer. Man kan f.eks bare ha en 
 
 Så kan dere teste om websiden lar seg laste ned. Da vet dere at webserveren fungerer som den skal. Denne kommandoen kan kjøres på manager eller en av webserverne.  
 
-curl http://<IP-TIL-VM>
+```curl http://<IP-TIL-VM>```
 
 f.eks: curl http://192.168.0.40
 
-  
 
 Dersom du ikke vil ha status-informasjonen i tillegg, så legg til "-s" i curl kommandoen.
 
-  
 
-5. **( DEL AV OBLIG )** Installer haproxy på balancer og sett opp lastbalansering hvor www2 og www1 deler på belastningen basert på det som står i slidene.
+- [ ] 5. **( DEL AV OBLIG )** Installer haproxy på balancer og sett opp lastbalansering hvor www2 og www1 deler på belastningen basert på det som står i slidene.
 
 Installasjon av haproxy gjøres som root-brukeren:
 
-apt-get update  
+```apt-get update```
   
-apt-get install haproxy net-tools
+```apt-get install haproxy net-tools```
 
 Deretter må man gå inn og endre konfigurasjonsfilen her: /etc/haproxy/haproxy.cfg. Denne filen inneholder allerede det meste man trenger, men dere må definere en frontend, en backend og stats.
 
@@ -123,9 +121,9 @@ Test med wget/curl om du nå får lastet ned en webside gjennom lastbalansereren
 
   
 
-6. ( DEL AV OBLIG ) Gå inn i riktig gruppe i blackboard, slik at dere kan få tilsendt de obligatoriske oppgavene.  
+- [x] 6.( DEL AV OBLIG ) Gå inn i riktig gruppe i blackboard, slik at dere kan få tilsendt de obligatoriske oppgavene.  
 
-7. ( DEL AV OBLIG ) Denne oppgaven skal gjøres på manager.
+- [x] 7.( DEL AV OBLIG ) Denne oppgaven skal gjøres på manager.
 
 En viktig del av kurset er å kunne styre de virtuelle maskinenen fra kommandolinjen og å lage små shellscript som automatiserer deler av driften. Vi vil allikevel unngå at dere legger inn deres egne brukernavn og passord inn i disse scriptene, da dette ville blitt synlig for andre i gruppen. I stedet har vi en løsning der hver gruppe har en ekstra bruker, som kan brukes til automatiseringen. Vi kaller denne brukeren "service brukeren" i dette kurset.
 
