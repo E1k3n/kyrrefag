@@ -45,7 +45,6 @@ Så kan vi kjøre det:
 Hvis dere fikk ut tekst i forskjellige farger er det supert!
 ```
 
-![[Pasted image 20230207165526.png]]
 
 - [ ] b) Må fargetest.sh ligge i samme mappe som base.sh for at det skal fungere?
 
