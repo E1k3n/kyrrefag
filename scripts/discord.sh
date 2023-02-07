@@ -2,7 +2,7 @@
 
 message="$1"
 
-URL="DISCORD URL SKAL HIT"
+URL="https://discord.com/api/webhooks/1072508325700325438/-e6yvrANyKDACFMWNFkb5IuanSeBJjQrb8i0h5RolJeiqG8QGf8JRcSLz6Bw4EUqhPY3"
 
 USERNAME="Logger [$HOSTNAME]"
 
