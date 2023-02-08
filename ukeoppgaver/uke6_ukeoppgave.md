@@ -1,5 +1,5 @@
 ***Besvarelse med bilder ligger i google docs***
-
+Sjekkliste her
 
 
 1. [x] (Del av oblig 2)  Shellscript er nyttige, men de kan fort bli rotete og vanskelige å forstå. Dessuten fylles de ofte opp med "nyttige" triks, slik som å kunne skrive ut meldinger i flere farger. Mange script betyr at man må vedlikeholde de samme "triksene" i hvert enkelt skript. Dette skalerer ikke. La oss prøve en annen fremgangsmåte. Det blir som å lage seg et lite "bibliotek" som lastes inn i begynnelsen av et script. Litt som "import" i Python eller header filer i C++. 
