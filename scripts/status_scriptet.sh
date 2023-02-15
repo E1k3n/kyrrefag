@@ -12,7 +12,7 @@ all_server_id=$(openstack server list -f csv | tail -n +2 | cut -d ',' -f 1 | tr
 for server in $all_server_id;
 do
         #Uncomment for å debugge
-        #openstack server show "$server" -f value -c status
+        #openstack server show "$server" -f value -c name -c status
 
         status=$(openstack server show "$server" -f value -c status);
 	name=$(openstack server show "$server" -f value -c name);
