@@ -49,12 +49,6 @@ do
 	fi
 done
 
-#Her bare bekrefter den at scriptet er kjør
-JSON="{\"username\": \"STATUS UPDATE\", \"content\": \":white_check_mark: Fullførte status_scriptet.sh på $date_now\"}"
-curl -s -X POST -H "Content-Type: application/json" -d "$JSON" $URL
-
-
-
-
-
-
+#Her bare bekrefter den at scriptet er kjør - sender til logfil
+#TODO pr nå sendes kun kvittering til logfilen, serverstatus sendes ikke
+echo "Fullførte status_scriptet.sh på $date_now" >> status_log.txt;
