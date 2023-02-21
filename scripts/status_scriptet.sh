@@ -19,11 +19,14 @@ do
 
 	
 	#Sjekk på status (www1 og www2 er hardkodet ut siden de kjøres i docker)
-	if [[ $status != "ACTIVE" && $name != "www1" && $name != "www2" ]];
+	if [[ $status != "ACTIVE" ]];
 	then	
 		#Sender til discord
 		JSON="{\"username\": \"STATUS UPDATE on // $name //\", \"content\": \":warning: @everyone        $date_now           Status: :x:  $status\"}"
         	curl -s -X POST -H "Content-Type: application/json" -d "$JSON" $URL
+		
+		# Logger til logfilen
+		echo "$name: Status nå er = $status Tid: $date_now" >> /home/ubuntu/git/kyrrefag/scripts/status_scriptet.log;
 
 		#Rebooter serveren om den er nede
 		nova start $name;
@@ -44,11 +47,13 @@ do
 			status=$(openstack server show "$server" -f value -c status);
                         JSON="{\"username\": \"STATUS UPDATE on // $name //\", \"content\": \":eight_spoked_asterisk: Forsøkte å starte maskinen. Status nå:  $status\"}"
                         curl -s -X POST -H "Content-Type: application/json" -d "$JSON" $URL
+
+			# Logger til logfilen
+			echo "Forsøkte å starte $name: Status nå er = $status Tid: $date_now" >> /home/ubuntu/git/kyrrefag/scripts/status_scriptet.log;
 	
 		fi
 	fi
 done
 
 #Her bare bekrefter den at scriptet er kjør - sender til logfil
-#TODO pr nå sendes kun kvittering til logfilen, serverstatus sendes ikke
-echo "Fullførte status_scriptet.sh på $date_now" >> ./status_scriptet.log;
+echo "Fullførte status_scriptet.sh på $date_now" >> /home/ubuntu/git/kyrrefag/scripts/status_scriptet.log;
