@@ -51,4 +51,4 @@ done
 
 #Her bare bekrefter den at scriptet er kjør - sender til logfil
 #TODO pr nå sendes kun kvittering til logfilen, serverstatus sendes ikke
-echo "Fullførte status_scriptet.sh på $date_now" >> status_log.txt;
+echo "Fullførte status_scriptet.sh på $date_now" >> ./status_scriptet.log;
