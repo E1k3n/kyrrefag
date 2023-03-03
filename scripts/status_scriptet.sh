@@ -4,6 +4,8 @@
 #For discord web hook
 URL="https://discord.com/api/webhooks/1072508325700325438/-e6yvrANyKDACFMWNFkb5IuanSeBJjQrb8i0h5RolJeiqG8QGf8JRcSLz6Bw4EUqhPY3"
 date_now=$(date)
+source /home/ubuntu/DCSG2003_V23_group37-openrc.sh
+
 
 #Henter server ID fra samtlige servere
 all_server_id=$(openstack server list -f csv | tail -n +2 | cut -d ',' -f 1 | tr '\n' ' ' | tr -d '"');
@@ -18,7 +20,7 @@ do
 	name=$(openstack server show "$server" -f value -c name);
 
 	
-	#Sjekk på status (www1 og www2 er hardkodet ut siden de kjøres i docker)
+	#Sjekk på status
 	if [[ $status != "ACTIVE" ]];
 	then	
 		#Sender til discord
