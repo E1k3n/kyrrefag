@@ -4,7 +4,7 @@ source ./base.sh
 ls "$1"
 
 if [ $? -eq 0 ]; then
-    ok Denne mappen eksisterer
+    ok "Denne mappen eksisterer!"
 else
-    error FAIL
+    error "Denne mappen eksisterer IKKE!"
 fi
