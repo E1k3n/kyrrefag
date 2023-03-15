@@ -1,4 +1,4 @@
 #!/bin/bash
 source ./base.sh
 
-ok $1
+ok "$1"
