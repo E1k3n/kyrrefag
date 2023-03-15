@@ -1,9 +1,10 @@
 #!/bin/bash
+source ./base.sh
 
 ls "$1"
 
 if [ $? -eq 0 ]; then
-    echo OK
+    ok Denne mappen eksisterer
 else
-    echo FAIL
+    error FAIL
 fi
