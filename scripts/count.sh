@@ -2,11 +2,13 @@
 source ./base.sh
 
 # Finner antall brukere i bookface
-users=$(cockroach --insecure --host=localhost sql --execute="USE bf; SELECT COUNT(*) FROM users;" | tail -n +3 | head -n 1 | awk '{print "Antall brukere\\t\\t" $1}')
-info "$users"
+brukere=$(cockroach --insecure --host=localhost sql --execute="USE bf; SELECT COUNT(*) FROM users;" | tail -n +3 | head -n 1 | awk '{print "Antall brukere\\t\\t" $1}')
+info "$brukere"
 
 # Finner antall poster i bookface
-cockroach --insecure --host=localhost sql --execute="USE bf; SELECT COUNT(*) FROM posts;" | tail -n +3 | head -n 1 | awk '{print "Antall poster\t\t" $1}'
+poster=$(cockroach --insecure --host=localhost sql --execute="USE bf; SELECT COUNT(*) FROM posts;" | tail -n +3 | head -n 1 | awk '{print "Antall poster\t\t" $1}')
+info "$poster"
 
 # Finner antall kommentarer i bookface
-cockroach --insecure --host=localhost sql --execute="USE bf; SELECT COUNT(*) FROM comments;" | tail -n +3 | head -n 1 | awk '{print "Antall kommentarer\t" $1}'
+kommentarer=$(cockroach --insecure --host=localhost sql --execute="USE bf; SELECT COUNT(*) FROM comments;" | tail -n +3 | head -n 1 | awk '{print "Antall kommentarer\t" $1}')
+info "$kommentarer"
