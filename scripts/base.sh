@@ -35,3 +35,5 @@ JSON="{\"username\": \"$USERNAME\", \"content\": \"$message\"}"
 curl -s -X POST -H "Content-Type: application/json" -d "$JSON" $URL
 
 }
+
+discord_log "test for alle penga!"
