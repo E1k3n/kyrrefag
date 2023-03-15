@@ -2354,3 +2354,7 @@ Fullførte status_scriptet.sh på Wed Mar 15 14:30:01 CET 2023
 Fullførte status_scriptet.sh på Wed Mar 15 14:45:01 CET 2023
 Fullførte status_scriptet.sh på Wed Mar 15 15:00:01 CET 2023
 Fullførte status_scriptet.sh på Wed Mar 15 15:15:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 15:30:01 CET 2023
+balancer: Status nå er = SHUTOFF Tid: Wed Mar 15 15:45:01 CET 2023
+Forsøkte å starte balancer: Status nå er = ACTIVE Tid: Wed Mar 15 15:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 15:45:01 CET 2023
