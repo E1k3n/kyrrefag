@@ -3,6 +3,7 @@
 # Tømmer databasen før stopp
 sudo cockroach node drain 1 --insecure
 # Sjekker om tømming er fullført før fortsettelse
+#TODO denne funker ikke
 while [[ $(sudo cockroach node ls --insecure --format=csv --host=localhost --certs-dir=/certs | grep "draining") ]]; do
   sleep 1s
 done
