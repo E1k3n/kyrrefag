@@ -8,10 +8,10 @@ while [[ $(sudo cockroach node ls --insecure --format=csv --host=localhost --cer
 done
 
 # Stopper cockroachdb
-# Få prosess-IDen til prosessen du vil drepe
+# Får prosess-IDen til prosessen
 pid=$(pgrep cockroach)
 
-# Sjekk om prosessen kjører
+# Sjekker om prosessen kjører
 if ps -p $pid > /dev/null; then
   # Hvis prosessen kjører, killes den
   sudo kill $pid
@@ -28,7 +28,7 @@ sudo cp -a /bfdata /bfdata_backup
 # Starter cockroachdb igjen
 sudo cockroach start --insecure --store=/bfdata --listen-addr=0.0.0.0:26257 --http-addr=0.0.0.0:8080 --background --join=localhost:26257
 
-# Komprimer backupen
+# Komprimer og navngir backupen
 backup_navn=$(date +"%Y-%m-%d-%H-%M-%S")_bfdata_backup.tar.gz
 tar -czvf $backup_navn /bfdata_backup
 
