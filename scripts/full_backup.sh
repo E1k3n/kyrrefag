@@ -1,14 +1,26 @@
 #!/bin/bash
 
-# Draining the database before stopping
+# Tømmer databasen før stopp
 sudo cockroach node drain 1 --insecure
-# Check if drain is complete before continuing
+# Sjekker om tømming er fullført før fortsettelse
 while [[ $(sudo cockroach node ls --insecure --format=csv --host=localhost --certs-dir=/certs | grep "draining") ]]; do
   sleep 1s
 done
 
-# Stopping cockroachdb
-cockroach quit --insecure --host=localhost
+# Stopper cockroachdb
+# Få prosess-IDen til prosessen du vil drepe
+pid=$(pgrep cockroach)
+
+# Sjekk om prosessen kjører
+if ps -p $pid > /dev/null; then
+  # Hvis prosessen kjører, dreper du den
+  sudo kill $pid
+
+  # Vent til prosessen slutter å kjøre
+  while ps -p $pid > /dev/null; do
+    sleep 1s
+  done
+fi
 
 # Lag backup av bfdata-mappen
 sudo cp -a /bfdata /bfdata_backup
@@ -20,6 +32,6 @@ cockroach start --insecure --host=localhost --background
 backup_name=$(date +"%Y-%m-%d-%H-%M-%S")_bfdata_backup.tar.gz
 tar -czvf $backup_name /bfdata_backup
 
-# Send backupen til remote serveren
+# Sender backupen til remote serveren
 echo "Sender backup til ubuntu@192.168.129.90:/home/ubuntu/backup/"
 scp $backup_name ubuntu@192.168.129.90:/home/ubuntu/backup/
