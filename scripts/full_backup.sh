@@ -5,7 +5,7 @@ sudo cockroach node drain 1 --insecure
 # Sjekker om tømming er fullført før fortsettelse
 #TODO denne funker ikke
 while [[ $(sudo cockroach node ls --insecure --format=csv --host=localhost --certs-dir=/certs | grep "draining") ]]; do
-  sleep 1s
+    sleep 1s
 done
 
 # Stopper cockroachdb
@@ -14,13 +14,13 @@ pid=$(pgrep cockroach)
 
 # Sjekker om prosessen kjører
 if ps -p $pid > /dev/null; then
-  # Hvis prosessen kjører, killes den
-  sudo kill $pid
+    # Hvis prosessen kjører, killes den
+    sudo kill $pid
 
-  # Vent til prosessen slutter å kjøre
-  while ps -p $pid > /dev/null; do
-    sleep 1s
-  done
+    # Vent til prosessen slutter å kjøre
+    while ps -p $pid > /dev/null; do
+        sleep 1s
+    done
 fi
 
 # Lag backup av bfdata-mappen
