@@ -2361,3 +2361,194 @@ Fullførte status_scriptet.sh på Wed Mar 15 15:45:01 CET 2023
 Fullførte status_scriptet.sh på Wed Mar 15 16:00:01 CET 2023
 Fullførte status_scriptet.sh på Wed Mar 15 16:15:01 CET 2023
 Fullførte status_scriptet.sh på Wed Mar 15 16:30:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 16:45:02 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 17:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 17:15:01 CET 2023
+db1: Status nå er = SHUTOFF Tid: Wed Mar 15 17:30:01 CET 2023
+Forsøkte å starte db1: Status nå er = ACTIVE Tid: Wed Mar 15 17:30:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 17:30:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 17:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 18:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 18:15:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 18:30:01 CET 2023
+server1: Status nå er = SHUTOFF Tid: Wed Mar 15 18:45:01 CET 2023
+Forsøkte å starte server1: Status nå er = ACTIVE Tid: Wed Mar 15 18:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 18:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 19:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 19:15:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 19:30:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 19:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 20:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 20:15:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 20:30:01 CET 2023
+dockerV2: Status nå er = SHUTOFF Tid: Wed Mar 15 20:45:01 CET 2023
+Forsøkte å starte dockerV2: Status nå er = ACTIVE Tid: Wed Mar 15 20:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 20:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 21:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 21:15:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 21:30:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 21:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 22:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 22:15:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 22:30:01 CET 2023
+db1: Status nå er = SHUTOFF Tid: Wed Mar 15 22:45:01 CET 2023
+Forsøkte å starte db1: Status nå er = ACTIVE Tid: Wed Mar 15 22:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 22:45:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 23:00:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 23:15:02 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 23:30:01 CET 2023
+Fullførte status_scriptet.sh på Wed Mar 15 23:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 00:00:01 CET 2023
+memory_cache: Status nå er = SHUTOFF Tid: Thu Mar 16 00:15:01 CET 2023
+Forsøkte å starte memory_cache: Status nå er = ACTIVE Tid: Thu Mar 16 00:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 00:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 00:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 00:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 01:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 01:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 01:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 01:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 02:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 02:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 02:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 02:45:01 CET 2023
+dockerV2: Status nå er = SHUTOFF Tid: Thu Mar 16 03:00:01 CET 2023
+Forsøkte å starte dockerV2: Status nå er = ACTIVE Tid: Thu Mar 16 03:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 03:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 03:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 03:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 03:45:02 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 04:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 04:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 04:30:01 CET 2023
+db1: Status nå er = SHUTOFF Tid: Thu Mar 16 04:45:01 CET 2023
+Forsøkte å starte db1: Status nå er = ACTIVE Tid: Thu Mar 16 04:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 04:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 05:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 05:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 05:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 05:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 06:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 06:15:01 CET 2023
+db1: Status nå er = SHUTOFF Tid: Thu Mar 16 06:30:01 CET 2023
+Forsøkte å starte db1: Status nå er = ACTIVE Tid: Thu Mar 16 06:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 06:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 06:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 07:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 07:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 07:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 07:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 08:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 08:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 08:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 08:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 09:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 09:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 09:30:01 CET 2023
+balancer: Status nå er = SHUTOFF Tid: Thu Mar 16 09:45:01 CET 2023
+Forsøkte å starte balancer: Status nå er = ACTIVE Tid: Thu Mar 16 09:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 09:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 10:00:01 CET 2023
+memory_cache: Status nå er = SHUTOFF Tid: Thu Mar 16 10:15:01 CET 2023
+Forsøkte å starte memory_cache: Status nå er = ACTIVE Tid: Thu Mar 16 10:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 10:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 10:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 10:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 11:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 11:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 11:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 11:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 12:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 12:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 12:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 12:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 13:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 13:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 13:30:01 CET 2023
+dockerV2: Status nå er = SHUTOFF Tid: Thu Mar 16 13:45:01 CET 2023
+Forsøkte å starte dockerV2: Status nå er = ACTIVE Tid: Thu Mar 16 13:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 13:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 14:00:01 CET 2023
+balancer: Status nå er = SHUTOFF Tid: Thu Mar 16 14:15:01 CET 2023
+Forsøkte å starte balancer: Status nå er = ACTIVE Tid: Thu Mar 16 14:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 14:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 14:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 14:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 15:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 15:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 15:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 15:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 16:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 16:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 16:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 16:45:01 CET 2023
+balancer: Status nå er = SHUTOFF Tid: Thu Mar 16 17:00:01 CET 2023
+Forsøkte å starte balancer: Status nå er = ACTIVE Tid: Thu Mar 16 17:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 17:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 17:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 17:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 17:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 18:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 18:15:01 CET 2023
+dockerV2: Status nå er = SHUTOFF Tid: Thu Mar 16 18:30:01 CET 2023
+Forsøkte å starte dockerV2: Status nå er = ACTIVE Tid: Thu Mar 16 18:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 18:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 18:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 19:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 19:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 19:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 19:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 20:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 20:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 20:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 20:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 21:00:01 CET 2023
+dockerV2: Status nå er = SHUTOFF Tid: Thu Mar 16 21:15:01 CET 2023
+Forsøkte å starte dockerV2: Status nå er = ACTIVE Tid: Thu Mar 16 21:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 21:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 21:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 21:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 22:00:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 22:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 22:30:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 22:45:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 23:00:01 CET 2023
+memory_cache: Status nå er = SHUTOFF Tid: Thu Mar 16 23:15:01 CET 2023
+Forsøkte å starte memory_cache: Status nå er = ACTIVE Tid: Thu Mar 16 23:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 23:15:01 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 23:30:02 CET 2023
+Fullførte status_scriptet.sh på Thu Mar 16 23:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 00:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 00:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 00:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 00:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 01:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 01:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 01:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 01:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 02:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 02:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 02:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 02:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 03:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 03:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 03:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 03:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 04:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 04:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 04:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 04:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 05:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 05:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 05:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 05:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 06:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 06:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 06:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 06:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 07:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 07:15:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 07:30:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 07:45:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 08:00:01 CET 2023
+Fullførte status_scriptet.sh på Fri Mar 17 08:15:01 CET 2023
