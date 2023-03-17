@@ -11,7 +11,7 @@ done
 cockroach quit --insecure --host=localhost
 
 # Lag backup av bfdata-mappen
-cp -a /bfdata /bfdata_backup
+sudo cp -a /bfdata /bfdata_backup
 
 # Start cockroachdb igjen
 cockroach start --insecure --host=localhost --background
