@@ -34,4 +34,4 @@ tar -czvf $backup_navn /bfdata_backup
 
 # Sender backupen til remote serveren
 echo "Sender backupen til ubuntu@192.168.129.90:/home/ubuntu/backup/"
-sudo scp -i /home/ubuntu/.ssh/id_rsa $komprimert ubuntu@192.168.129.90:/home/ubuntu/backup/
+sudo scp -i /home/ubuntu/.ssh/id_rsa $komprimert_navn ubuntu@192.168.129.90:/home/ubuntu/backup/
