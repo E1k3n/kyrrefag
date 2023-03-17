@@ -11,7 +11,7 @@ sudo pgrep cockroach | sudo xargs kill
 wait 1;
 
 # Tar kopi av /bfdata-mappen
-sudo cp -r /bfdata/ /bfdata_backup
+sudo cp -r /bfdata/ ~/bfdata_backup
 echo "Tar kopi av /bfdata"
 
 
