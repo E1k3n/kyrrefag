@@ -2,10 +2,10 @@
 
 # Tømmer databasen før stopp
 sudo cockroach node drain 1 --insecure
-# Sjekker om tømming er fullført før fortsettelse
-#TODO denne funker ikke
-while [[ $(sudo cockroach node ls --insecure --format=csv --host=localhost --certs-dir=/certs | grep "draining") ]]; do
+# Sjekker om tømming er fullført før fortsettelse, dersom den enda er oppe logges dette i terminalen
+while [[ $(sudo cockroach node status 1 --insecure --format=csv --host=localhost:26257 --certs-dir=/certs | cut -d ',' -f 9 | tac | grep -m 1 -o 'true') ]]; do
     sleep 1s
+    eco "Fortsatt oppe"
 done
 
 # Stopper cockroachdb
