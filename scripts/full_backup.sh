@@ -36,3 +36,6 @@ tar -czvf $backup_navn /bfdata_backup
 # Sender backupen til remote serveren
 echo "Sender backupen til ubuntu@192.168.129.90:/home/ubuntu/backup/"
 sudo scp -i /home/ubuntu/.ssh/id_rsa $backup_navn ubuntu@192.168.129.90:/home/ubuntu/backup/
+
+# Den komprimerte mappen slettes fra db1 for å unngå unødvendig plassbruk
+sudo rm $backup_navn
