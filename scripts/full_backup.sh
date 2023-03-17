@@ -1,34 +1,25 @@
 #!/bin/bash
 
-# Drainer databasen
+# Draining the database before stopping
 sudo cockroach node drain 1 --insecure
+# Check if drain is complete before continuing
+while [[ $(sudo cockroach node ls --insecure --format=csv --host=localhost --certs-dir=/certs | grep "draining") ]]; do
+  sleep 1s
+done
 
+# Stopping cockroachdb
+cockroach quit --insecure --host=localhost
 
-# Shutdown prosessen
-echo "Databasen er drained: Stopper databasen"
+# Lag backup av bfdata-mappen
+cp -a /bfdata /bfdata_backup
 
-sudo pgrep cockroach | sudo xargs kill
-wait 1;
+# Start cockroachdb igjen
+cockroach start --insecure --host=localhost --background
 
-# Tar kopi av /bfdata-mappen
-sudo cp -r /bfdata/ /bfdata_backup
-echo "Tar kopi av /bfdata"
+# Komprimer backupen
+backup_name=$(date +"%Y-%m-%d-%H-%M-%S")_bfdata_backup.tar.gz
+tar -czvf $backup_name /bfdata_backup
 
-
-# Starter CockroachDB igjen
-sudo cockroach start --insecure --store=/bfdata --listen-addr=0.0.0.0:26257 --http-addr=0.0.0.0:8080 --background --join=localhost:26257
-
-echo "Starter databasen"
-
-# Lager et unikt navn til den komprimerte filen
-komprimert=$(date +"%Y-%m-%d-%H-%M-%S")_bfdata_backup.tar.gz
-echo "Navngir backupen"
-
-
-# Komprimer /bfdata_backup-mappen med tar kommandoen
-sudo tar -czvf $komprimert /bfdata_backup
-echo "Komprimerer backupen"
-
-# Kopier komprimert db1-kopi til backup maskinen med scp
-sudo scp -i /home/ubuntu/.ssh/id_rsa $komprimert ubuntu@192.168.129.90:/home/ubuntu/backup/
-echo "Overfører backup via scp"
+# Send backupen til remote serveren
+echo "Sender backup til ubuntu@192.168.129.90:/home/ubuntu/backup/"
+scp $backup_name ubuntu@192.168.129.90:/home/ubuntu/backup/
