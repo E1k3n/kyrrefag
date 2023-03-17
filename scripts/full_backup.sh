@@ -13,7 +13,7 @@ pid=$(pgrep cockroach)
 
 # Sjekk om prosessen kjører
 if ps -p $pid > /dev/null; then
-  # Hvis prosessen kjører, dreper du den
+  # Hvis prosessen kjører, killes den
   sudo kill $pid
 
   # Vent til prosessen slutter å kjøre
@@ -25,13 +25,13 @@ fi
 # Lag backup av bfdata-mappen
 sudo cp -a /bfdata /bfdata_backup
 
-# Start cockroachdb igjen
-cockroach start --insecure --host=localhost --background
+# Starter cockroachdb igjen
+sudo cockroach start --insecure --store=/bfdata --listen-addr=0.0.0.0:26257 --http-addr=0.0.0.0:8080 --background --join=localhost:26257
 
 # Komprimer backupen
-backup_name=$(date +"%Y-%m-%d-%H-%M-%S")_bfdata_backup.tar.gz
-tar -czvf $backup_name /bfdata_backup
+backup_navn=$(date +"%Y-%m-%d-%H-%M-%S")_bfdata_backup.tar.gz
+tar -czvf $backup_navn /bfdata_backup
 
 # Sender backupen til remote serveren
-echo "Sender backup til ubuntu@192.168.129.90:/home/ubuntu/backup/"
-scp $backup_name ubuntu@192.168.129.90:/home/ubuntu/backup/
+echo "Sender backupen til ubuntu@192.168.129.90:/home/ubuntu/backup/"
+sudo scp -i /home/ubuntu/.ssh/id_rsa $komprimert ubuntu@192.168.129.90:/home/ubuntu/backup/
